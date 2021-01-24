@@ -23,6 +23,11 @@
 .aligh_container {
     width: 1600px;
     margin: 0 auto;
+
+}
+
+.aligh_content{
+    margin: 0 auto;
 }
 
 .header_container{
@@ -32,7 +37,7 @@
     margin-top: 25px;
     position: relative;
     justify-content: center;
-    margin-top: 25px;
+
 
 }
 
@@ -67,7 +72,6 @@
 
 .header_form{
     margin-left: 30px;
-
     display: flex;
     align-items: stretch;
     border: 1px solid #eee;
@@ -122,7 +126,7 @@
 .nav_index{
     display: flex;
     justify-content: center;
-    margin: 20px 0px;
+    margin: 20px 0;
 
 }
 
@@ -146,10 +150,6 @@
     background: url(../img/3block_bg.png) no-repeat;
 }
 
-.graphic_line{
-
-}
-
 .introduce_txt_container{
     display: block;
     padding-top: 225px;
@@ -162,10 +162,10 @@
     display: block;
     content: "";
     width: 12px;
-    height: 96px;
+    height: 88px;
     background-color: #f16d7f;
     position: absolute;
-    top: 238px;
+    top: 233px;
     left: 230px;
 }
 
@@ -176,7 +176,7 @@
     color: #222222;
     font-weight: 900;
     font-family: "Lato";
-    letter-spacing: 0px;
+    letter-spacing: 0;
 
 
 }
@@ -187,7 +187,7 @@
     color: #222222;
     font-weight: 900;
     font-family: "Lato";
-    letter-spacing: 0px;
+    letter-spacing: 0;
     line-height: 40px;
 }
 
@@ -199,4 +199,179 @@
     font-family: "Lato";
     letter-spacing: 0px;
     line-height: 40px;
+}
+
+.hotdeal_section{
+    display: flex;
+}
+
+.hotdeal_card_wrapper_col{
+    margin: 100px auto;
+}
+.hotdeal_card_block{
+    position: relative;
+}
+
+.hotdeal_offer_txt_block{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    padding: 13px;
+}
+
+.hotdeal_offer_img{
+    display: block;
+}
+
+.mrgn-r-10px{
+    margin-right: 10px;
+}
+
+.mrgn-l-10px{
+    margin-left: 10px;
+}
+
+.mrgn-btm-20px{
+    margin-bottom: 20px;
+}
+
+.hotdeal_offer_txt,
+.hotdeal_offer_txt_spec{
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 900;
+    font-family: "Lato";
+
+
+}
+
+.hotdeal_offer_txt_spec{
+    font-size: 30px;
+    color: #f16d7f;
+    margin-top: 6px;
+
+}
+
+.fetured_item_section{
+    text-align: center;
+}
+
+.h1_fetured_items_block{
+    display: block;
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.h1_fetured_items_title,
+h1_fetured_items_subtitle{
+    display: block;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 44px;
+    color: #222222;
+    font-weight: 700;
+    font-family: "Lato";
+}
+
+.h1_fetured_items_subtitle{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #9f9f9f;
+    font-weight: 400;
+}
+
+.fetured_item_card_array_container{
+    display: flex;
+    width: 1140px;
+    justify-content: space-between;
+}
+
+.fetured_item_card_block{
+    margin-bottom: 39px;
+    position: relative;
+    text-align: left;
+}
+
+.fetured_item_card_name_of_product,
+.fetured_item_card_price{
+    display: block;
+    margin: 20px 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #222222;
+    font-weight: 400;
+    font-family: "Lato";
+
+}
+
+.fetured_item_card_price{
+    color: #f16d7f;
+}
+
+
+
+.fetured_item_card_block::before{
+    content: '';
+    width: 100%;
+    height: 280px;
+    background-color: black;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fetured_item_card_block:hover .add_to_cart_btn{
+    opacity: 1;
+}
+
+.fetured_item_card_block:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+
+}
+
+.fetured_item_card_block:hover::before{
+    opacity: 0.5;
+}
+
+.add_to_cart_btn{
+    position: absolute;
+    top: 96px;
+    left: 70px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    background: none repeat;
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato";
+    padding: 12px 12px 5px 9px;
+}
+
+.add_to_cart_btn:focus{
+    outline: none;
+}
+
+.add_to_cart_img{
+    padding-right: 9px;
+}
+
+.browse_all_product_btn{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 54px;
+    color: #ffffff;
+    background-color: #f16d7f;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    padding: 17px 25px;
+    margin: 55px 0;
+    text-decoration: none;
 }
