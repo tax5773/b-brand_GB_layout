@@ -25,10 +25,17 @@ body{
     overflow: hidden;
 }
 
-.aligh_container {
+.aligh_container{
     width: 1140px;
     margin: 0 auto;
 
+}
+.aligh_gallary_container{
+    width: 850px;
+}
+
+.mb110{
+    margin-bottom: 110px;
 }
 
 .aligh_content{
@@ -65,14 +72,8 @@ body{
 }
 
 .brand_txt_spec{
-    font-size: 27px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 32px;
     color: #f16d7f;
-    font-weight: 300;
-    font-family: "Lato";
-    text-align: center;
+    font-weight: 900;
 }
 
 .header_form{
@@ -291,7 +292,7 @@ h1_fetured_items_subtitle{
 
 .fetured_item_card_array_container{
     display: flex;
-    width: 1140px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -335,6 +336,14 @@ h1_fetured_items_subtitle{
     opacity: 1;
 }
 
+.fetured_item_card_block:hover .card-hover__compare-btn{
+    opacity: 1;
+ }
+
+.fetured_item_card_block:hover .card-hover__favorite-btn{
+    opacity: 1;
+}
+
 .fetured_item_card_block:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
 
@@ -344,23 +353,43 @@ h1_fetured_items_subtitle{
     opacity: 0.5;
 }
 
-.add_to_cart_btn{
+.add_to_cart_btn,
+.card-hover__compare-btn,
+.card-hover__favorite-btn{
     position: absolute;
-    top: 96px;
-    left: 70px;
-    opacity: 0;
     display: flex;
     align-items: center;
     background: none repeat;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
     font-size: 13px;
     color: #ffffff;
     font-weight: 700;
     font-family: "Lato";
-    padding: 12px 12px 5px 9px;
+    opacity: 0;
 }
 
-.add_to_cart_btn:focus{
+.add_to_cart_btn{
+    top: 101px;
+    left: 70px;
+    padding: 8px 12px 5px 9px;
+}
+
+.card-hover__compare-btn{
+    top: 146px;
+    left: 70px;
+    padding: 12px 16px 12px 16px;
+}
+
+.card-hover__favorite-btn{
+    top: 146px;
+    left: 135px;
+    padding: 11px 18px 8px 19px;
+}
+
+.add_to_cart_btn:focus,
+.card-hover__compare-btn,
+.card-hover__favorite-btn{
     outline: none;
 }
 
@@ -662,4 +691,249 @@ h1_fetured_items_subtitle{
 .social_icon:hover{
     outline: 0 ;
     border: 0;
+}
+
+.main-product{
+
+}
+
+.content-pointer{
+    display: block;
+    background: #f8f3f4;
+    line-height: 150px;
+    height: 147px;
+    margin-bottom: 59px;
+}
+
+.content-pointer__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-depended-attribute{
+    font-size: 24px;
+    color: #f16d7f;
+    font-weight: 900;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+
+.content-pointer__options__attribute{
+    font-size: 14px;
+    color: #636363;
+    font-weight: 300;
+    font-family: "Lato";
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.font_spec{
+    color: #f16d7f;
+    font-weight: 900;
+}
+
+.content-pointer__options__attribute:not(:last-child):after{
+    content: '/';
+}
+
+.product-gallary{
+    display: flex;
+}
+
+.product-nav{
+    width: 250px;
+    margin-right: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+.hide +
+.product-nav__label-product ~
+.product-nav__type-product{
+    display: none;
+}
+.product-nav__label-product{
+    padding-left: 18px;
+    font-family: "Lato";
+    color: #000000;
+    font-size: 16px;
+    text-align: left;
+    line-height: 38px;
+    cursor: pointer;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ebebeb;
+    border-left: 5px solid #ef5b70;
+}
+.product-nav__label-product:not(:last-child){
+    margin-bottom: 18px;
+}
+
+
+.hide +
+.product-nav__label-product{
+    width: 100%;
+}
+
+.hide:checked +
+.product-nav__label-product{
+    color: red;
+
+
+}
+
+.hide:checked +
+.product-nav__label-product +
+.product-nav__type-product{
+    display: block;
+    background: #ffffff;
+    width: 100%;
+    padding-left: 23px;
+    padding-bottom: 30px;
+
+
+}
+
+.type-product__attribute{
+    display: block;
+    text-decoration: none;
+    color: #6f6e6e;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: left;
+    font-size: 14px;
+    line-height: 33px;
+}
+
+.advantage-options{
+    background: #222224;
+    padding: 90px 0;
+}
+
+.advantage-options__wrapper{
+    display: flex;
+    justify-content: space-between;
+    background: #222224;
+}
+
+.advantage-options__free-delivery,
+.advantage-options__sales,
+.advantage-options__quality{
+    display: block;
+    text-align: center;
+    width: 27%;
+    padding-top: 55px;
+}
+
+.advantage-options__free-delivery {
+    background: url('../img/free_delivery_icon.png') top no-repeat;
+}
+
+.advantage-options__sales {
+    background: url('../img/sales_icon.png') top no-repeat;
+}
+
+.advantage-options__quality {
+    background: url('../img/quality_icon.png') top no-repeat;
+}
+
+.advantage-option__title {
+    display: block;
+    color: #fbfbfb;
+    font-weight: 700;
+    font-family: "Lato";
+    font-size: 20px;    
+    padding-top: 9px;
+    margin-bottom: 11px;
+}
+
+.advantage-option__description {
+    font-size: 14px;
+    line-height: 25px;
+    color: #fbfbfb;
+    font-weight: 300;
+    font-family: "Lato";
+}
+
+.gallary-item-list-control{
+    display: flex;
+    justify-content:space-between;
+}
+
+.list-control__wrapper{
+    padding: 0 15px;
+    line-height: 42px;
+    border: 1px solid  #d2d2d2;
+}
+
+.list-control__lisl-atribute{
+    font-size: 13px;
+    line-height: 26px;
+    color: #d2d2d2;
+    font-weight: 300;
+    font-family: "Lato";
+    text-decoration: none;
+
+}
+
+.list-control__lisl-atribute:not(:last-child){
+    padding-right: 11px;
+}
+
+.list-control__lisl-atribute_spec{
+    color: #ef5b70;
+}
+
+.list-control__view-all-btn{
+    font-size: 16px;
+    line-height: 26px;
+    color: #ef5b70;
+    font-weight: 400;
+    font-family: "Lato";
+    background: transparent;
+    padding: 0 46px;
+    border: 1px solid #ef5b70;
+    border-radius: 2px
+}
+
+.list-control__view-all-btn:focus{
+    outline: none;
+}
+
+.search-control__wrapper
+{
+    display: flex;
+    font-size: 14px;
+    line-height: 26px;
+    color: #6f6e6e;
+    font-weight: 400;
+    font-family: "Lato";
+    text-decoration: none;
+}
+
+.filter-controls__trending-now,
+.filter-controls__price-range,
+.filter-controls__size{
+    width: 33%;
+
+}
+
+
+
+.filter-controls__price-range{
+    display: block;
+}
+
+.filter-controls__title{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.trending-now__option{
+
 }
