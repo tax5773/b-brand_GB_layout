@@ -38,26 +38,18 @@ body{
     margin-bottom: 110px;
 }
 
-.aligh_content{
-    margin: 0 auto;
-}
-
 .header_container{
-    width: 1140px;
     display: flex;
     align-items: center;
     margin-top: 25px;
     position: relative;
     justify-content: center;
-
-
 }
 
 .brand_icon{
     display: flex;
     align-items: center;
     text-decoration: none;
-
 }
 
 .brand_txt{
@@ -108,13 +100,13 @@ body{
 
 .header_control{
     margin-left: auto;
+    display: flex;
 }
 
 .button_bin{
-    position: relative;
-    height: 30px;
     border: none;
-    top: 15px;
+    margin-right: 25px;
+    justify-content: center;
 }
 
 .button_my_account{
@@ -143,6 +135,22 @@ body{
     color: #222222;
     font-weight: 700;
     font-family: "Lato";
+    position: relative;
+}
+
+.nav_index_link:hover{
+    color: #ef5b70;
+}
+
+.nav_index_link:hover:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 3px;
+    background-color: #ef5b70;
+
 }
 
 .nav_index_link:not(:last-of-type){
@@ -151,15 +159,15 @@ body{
 
 .introduce_block{
     display: block;
-    width: 1600px;
     height: 613px;
-    background: url(../img/3block_bg.png) no-repeat;
+    background: url(../img/3block_bg.png) top center no-repeat;
+    background-color: #e8e8e8;
 }
 
 .introduce_txt_container{
     display: block;
     padding-top: 225px;
-    padding-left: 255px;
+    padding-left: 25px;
     position: relative;
 
 }
@@ -172,7 +180,7 @@ body{
     background-color: #f16d7f;
     position: absolute;
     top: 233px;
-    left: 230px;
+    left: 0;
 }
 
 .introduce_txt_1_row{
@@ -466,7 +474,7 @@ h1_fetured_items_subtitle{
     background: url('../img/quality_icon.png') top left no-repeat;
 }
 
-.pl-75{
+offer__option{
     padding-left: 75px;
 }
 
@@ -492,7 +500,7 @@ h1_fetured_items_subtitle{
     height: 434px;
     margin-bottom: 110px;
     background: url(../img/serfing_guy.png) center top no-repeat;
-
+    background-size: cover;
 }
 
 .content__wrapper{
@@ -508,6 +516,8 @@ h1_fetured_items_subtitle{
     padding-left: 100px;
     padding-right: 70px;
     margin-top: 110px;
+    border-right: 1px solid #e3e3e3;
+
 }
 
 .reviews-user__review,
@@ -936,4 +946,170 @@ h1_fetured_items_subtitle{
 
 .trending-now__option{
 
+    font-size: 14px;
+
+    color: #6f6e6e;
+    font-weight: 400;
+    font-family: "Lato";
+    text-decoration: none;
+
 }
+
+.trending-now__option:not(:last-child){
+    padding: 0 15px;
+    border-right: 1px solid #6f6e6e;
+}
+
+.size__filter-option__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.size__filter-option{
+    padding: 0 20px 5px 0;
+}
+
+.size__filter-option-txt{
+    padding: 0 3px;
+}
+
+.filter-controls__title{
+    display: block;
+}
+
+.price-range__txt{
+    display: flex;
+    justify-content:space-between;
+}
+
+.checkout__hide {
+    display: none;
+}
+
+.checkout__hide +
+.checkout-form__label ~
+.checkout-form__hiddden-content{
+    display: none;
+}
+
+.checkout-form__hiddden-content{
+    display: inline-block;
+}
+
+.checkout-form__label,
+.registration__title,
+.registration__subtitle{
+    font-family: "Lato";
+    color: #222222;
+    text-align: left;
+}
+.checkout-form__label{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 38px;
+    cursor: pointer;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+
+}
+
+.new-registration-form,
+.log-in-form{
+    width: 50%;
+
+}
+
+.registration__title{
+    font-size: 13px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: uppercase;
+    padding-left: auto;
+    line-height: 25px;
+}
+.fs_12{
+    font-size: 12px;
+}
+
+.mb_30{
+    margin-bottom: 30px;
+}
+
+.registration__subtitle{
+    font-size: 13px;
+    font-weight: 400;
+    color: #b3b2b2;
+    line-height: 25px;
+}
+
+.registration__continue-btn{
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 700;
+    border: 1px solid #b3b2b2;
+    padding: 15px 50px;
+    background: transparent;
+}
+
+.log-in-form__log-in-btn{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 700;
+    border: 1px solid #b3b2b2;
+    padding: 15px 50px;
+    background: transparent;
+}
+
+.log-in-form__restore-pwrd-btn{
+    font-size: 14px;
+    line-height: 20px;
+    color: #222222;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+.new-registration-form__switch:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.log-in-form__form-input{
+    display: block;
+    width: 390px;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    margin: 12px 0;
+
+}
+
+.checkout-form__label:not(:last-child){
+    margin-bottom: 18px;
+}
+
+
+.checkout__hide +
+.checkout-form__label{
+    width: 100%;
+}
+
+.checkout__hide:checked +
+.checkout-form__label +
+.checkout-form__hiddden-content{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    padding-left: 23px;
+    padding-bottom: 30px;
+}
+
+.spec_clr,
+.log-in-form__sup_spec{
+    color: #ff0d0d;
+}
+
