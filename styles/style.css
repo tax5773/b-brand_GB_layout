@@ -39,7 +39,7 @@ body {
 .mb110 {
     margin-bottom: 110px;
 }
-/*/////////////////////////*/
+
 .header-wrapper {
     display: flex;
     align-items: center;
@@ -722,6 +722,10 @@ fetured-item__subtitle {
     background: #f8f3f4;
     line-height: 150px;
     height: 147px;
+
+}
+
+.mb-60px{
     margin-bottom: 59px;
 }
 
@@ -1125,3 +1129,122 @@ fetured-item__subtitle {
     color: #ff0d0d;
 }
 
+.you-may-like-also__title{
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: #4d4d4d;
+    font-weight: 900;
+    font-family: "Lato";
+    text-align: center;
+}
+
+
+
+.slider-page__view{
+    display: flex;
+    height: 780px;
+    background: url(../img/chair_girl_slider.png) top center no-repeat;
+    background-color: #f7f7f7;
+    align-items: center;
+}
+
+.slider-page__view-wrapper{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.slider-page__pagination{
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 16px;
+    background-color: #d8d8d8;
+}
+
+.slider-page__description__aligh-container{
+    width: 621px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-page__description-wrapper{
+    display: block;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 14px;
+    color: #5e5e5e;
+    font-weight: 300;
+    padding: 75px 0 123px 0;
+    border: 1px solid #eaeaea;
+
+}
+
+.slider-page__category-txt{
+    display: inline-block;
+
+    text-transform: uppercase;
+    color: #f16d7f;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+}
+
+.slider-page__category-txt:after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 63px;
+    color: #f16d7f;
+    left: 0;
+    top: 0;
+}
+
+.slider-page__item-name-txt{
+    color: #4d4d4d;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.single-page__description-txt{
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+.single-page__description-by-wrapper{
+    text-transform: uppercase;
+    color: #b9b9b9;
+    font-weight: 700;
+}
+
+.single-page__description-by_spec{
+    color: #5e5e5e;
+    font-weight: 700;
+}
+
+.single-page__description-by-wrapper{
+    margin: 33px 0;
+}
+.single-page__description-by__price{
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ef5b70;
+    font-weight: 700;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #eaeaea;;
+}
+
+.single-page__description-filters-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-page__single-description-filter-wrapper{
+    display: block;
+}
