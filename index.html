@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="aligh-container header-wrapper">
             <a href="#" class="header__brand-icon-wrapper">
                 <img src="img/b_logo.png" alt="brand_img" class="brand_img">
@@ -27,20 +27,20 @@
                 <input type="submit" value="" class="header-form__submit-icon">
             </form>
             <div class="header-control">
-                <button class="header-control__bin-btn"><img src="img/buy_logo.png" alt=""></button>
+                <button class="header-control__bin-btn"><img class="black-cart-iqon" src="img/black_cart.svg" alt=""></button>
                 <button class="header-control__my-account-btn">My account</button>
             </div>
         </div>
-        <nav class="header__nav">
-            <a href="#" class="header-nav__link">Home</a>
-            <a href="product.html" class="header-nav__link">Man</a>
-            <a href="#" class="header-nav__link">Women</a>
-            <a href="#" class="header-nav__link">Kids</a>
-            <a href="#" class="header-nav__link">Accoseriese</a>
-            <a href="#" class="header-nav__link">Featured</a>
-            <a href="#" class="header-nav__link">Hot Deals</a>
-        </nav>
     </header>
+    <nav class="header__nav">
+        <a href="#" class="header-nav__link">Home</a>
+        <a href="product.html" class="header-nav__link">Man</a>
+        <a href="#" class="header-nav__link">Women</a>
+        <a href="#" class="header-nav__link">Kids</a>
+        <a href="#" class="header-nav__link">Accoseriese</a>
+        <a href="#" class="header-nav__link">Featured</a>
+        <a href="#" class="header-nav__link">Hot Deals</a>
+    </nav>
     <main>
         <section class="introduce">
 
@@ -230,93 +230,94 @@
         </div>
 
     </section>
-    <section class="reviews-and-subscribe">
-        <div class="reviews-and-subscribe__wrapper aligh-container">
-            <article class="reviews__wrapper">
+    <footer class="footer">
+        <section class="reviews-and-subscribe">
+            <div class="reviews-and-subscribe__wrapper aligh-container">
+                <article class="reviews__wrapper">
                 <span class="reviews-user__review">
                     “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
                     a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
                 </span>
-                <span class="reviews-user__name">
+                    <span class="reviews-user__name">
                     Bin Burhan <span class="reviews-user__from">Dhaka, Bd</span>
                 </span>
-                <div class="reviews__pagination">
-                    <img src="img/slider_btns-img.png" alt="" class="sider__nav__btns">
-                </div>
-            </article>
-            <div class="subscribe__wrapper">
+                    <div class="reviews__pagination">
+                        <img src="img/slider_btns-img.png" alt="" class="sider__nav__btns">
+                    </div>
+                </article>
+                <div class="subscribe__wrapper">
                 <span class="subscribe__title">
                     Subscribe <span class="subscribe__subtitle">For our newletter and promotion</span>
                 </span>
-                <div class="subscribe__input__wrapper">
-                    <form class="subscribe__form">
-                        <input class="subscribe__form-email__input" type="text" placeholder="Enter Your Email">
-                        <button class="subscribe__btn" type="submit">Subscribe</button>
-                    </form>
+                    <div class="subscribe__input__wrapper">
+                        <form class="subscribe__form">
+                            <input class="subscribe__form-email__input" type="text" placeholder="Enter Your Email">
+                            <button class="subscribe__btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="info-and-nav">
-        <figure class="info-and-nav__wrapper aligh-container">
-            <article class="info-and-nav__brand-txt-a-lot ">
-                <a href="#" class="header__brand-icon-wrapper">
-                    <img src="img/b_logo.png" alt="brand_img" class="brand_img">
-                    <span class="header__brand-txt">
+        </section>
+        <section class="info-and-nav">
+            <figure class="info-and-nav__wrapper aligh-container">
+                <article class="info-and-nav__brand-txt-a-lot ">
+                    <a href="#" class="header__brand-icon-wrapper">
+                        <img src="img/b_logo.png" alt="brand_img" class="brand_img">
+                        <span class="header__brand-txt">
                     Bran<span class="header__brand-txt_spec">d</span>
                     </span>
-                </a>
-                <p class="brand-txt-a-lot__lot-of-txt">
+                    </a>
+                    <p class="brand-txt-a-lot__lot-of-txt">
                     <span class="lot-of-txt__part">
                         Objectively transition extensive data rather than cross functional solutions.
                     Monotonectally syndicate multidisciplinary materials before go forward benefits.
                     Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
                     </span>
 
-                    <span class="lot-of-txt__part">
+                        <span class="lot-of-txt__part">
                         Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
                     </span>
-                </p>
-            </article>
-            <article class="info-and-nav__company-info">
-                <h1 class="company-info__title">Company</h1>
-                <a href="#" class="company-info__list-point">Home</a>
-                <a href="#" class="company-info__list-point">Shop</a>
-                <a href="#" class="company-info__list-point">About</a>
-                <a href="#" class="company-info__list-point">How it works</a>
-                <a href="#" class="company-info__list-point">Contact</a>
-            </article>
-            <article class="info-and-nav__company-info">
-                <h1 class="company-info__title">Information</h1>
-                <a href="#" class="company-info__list-point">Tearms & Condition</a>
-                <a href="#" class="company-info__list-point">Privacy Policy</a>
-                <a href="#" class="company-info__list-point">How to Buy</a>
-                <a href="#" class="company-info__list-point">How to Sell</a>
-                <a href="#" class="company-info__list-point">Promotion</a>
-            </article>
-            <article class="info-and-nav__company-info">
-                <h1 class="company-info__title">Shop Category</h1>
-                <a href="#" class="company-info__list-point">Men</a>
-                <a href="#" class="company-info__list-point">Women</a>
-                <a href="#" class="company-info__list-point">Child</a>
-                <a href="#" class="company-info__list-point">Apparel</a>
-                <a href="#" class="company-info__list-point">Brows All</a>
+                    </p>
+                </article>
+                <article class="info-and-nav__company-info">
+                    <h1 class="company-info__title">Company</h1>
+                    <a href="#" class="company-info__list-point">Home</a>
+                    <a href="#" class="company-info__list-point">Shop</a>
+                    <a href="#" class="company-info__list-point">About</a>
+                    <a href="#" class="company-info__list-point">How it works</a>
+                    <a href="#" class="company-info__list-point">Contact</a>
+                </article>
+                <article class="info-and-nav__company-info">
+                    <h1 class="company-info__title">Information</h1>
+                    <a href="#" class="company-info__list-point">Tearms & Condition</a>
+                    <a href="#" class="company-info__list-point">Privacy Policy</a>
+                    <a href="#" class="company-info__list-point">How to Buy</a>
+                    <a href="#" class="company-info__list-point">How to Sell</a>
+                    <a href="#" class="company-info__list-point">Promotion</a>
+                </article>
+                <article class="info-and-nav__company-info">
+                    <h1 class="company-info__title">Shop Category</h1>
+                    <a href="#" class="company-info__list-point">Men</a>
+                    <a href="#" class="company-info__list-point">Women</a>
+                    <a href="#" class="company-info__list-point">Child</a>
+                    <a href="#" class="company-info__list-point">Apparel</a>
+                    <a href="#" class="company-info__list-point">Brows All</a>
 
-             </article>
-        </figure>
-    </section>
-    <footer class="footer">
-        <div class="footer-wrapper aligh-container">
-            <span class="footer__copyright-text">&copy;&nbsp;2017  Brand  All Rights Reserved.</span>
-            <div class="social_icons">
-                <button class="social-icon"><img src="img/social_icon_facebook.png" alt=""></button>
-                <button class="social-icon"><img src="img/social_icon_twitter.png" alt=""></button>
-                <button class="social-icon"><img src="img/social_icon_in.png" alt=""></button>
-                <button class="social-icon"><img src="img/social_icon_pinterest.png" alt=""></button>
-                <button class="social-icon"><img src="img/social_icon_google.png" alt=""></button>
+                </article>
+            </figure>
+        </section>
+        <div class="footer-wrapper">
+            <div class="footer-copyright-and-icons aligh-container">
+                <span class="footer__copyright-text">&copy;&nbsp;2017  Brand  All Rights Reserved.</span>
+                <div class="social_icons">
+                    <button class="social-icon"><img src="img/social_icon_facebook.png" alt=""></button>
+                    <button class="social-icon"><img src="img/social_icon_twitter.png" alt=""></button>
+                    <button class="social-icon"><img src="img/social_icon_in.png" alt=""></button>
+                    <button class="social-icon"><img src="img/social_icon_pinterest.png" alt=""></button>
+                    <button class="social-icon"><img src="img/social_icon_google.png" alt=""></button>
+                </div>
             </div>
         </div>
-
     </footer>
 </body>
 </html>

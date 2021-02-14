@@ -40,6 +40,11 @@ body {
     margin-bottom: 110px;
 }
 
+.header{
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 23px;
+}
+
 .header-wrapper {
     display: flex;
     align-items: center;
@@ -158,6 +163,10 @@ body {
 
 .header-nav__link:not(:last-of-type) {
     margin-right: 50px;
+}
+
+.black-cart-iqon{
+    fill-opacity: 0;
 }
 
 .introduce {
@@ -688,21 +697,19 @@ fetured-item__subtitle {
 }
 
 .footer {
+   color: #7a7a7a;
+}
+.footer-wrapper{
     display: flex;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     height: 80px;
-    width: 100%;
     background-color: #e6e6e6;
-    color: #7a7a7a;
+    align-items: center;
 }
 
-.footer-wrapper {
+.footer-copyright-and-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .social-icon,
@@ -949,13 +956,46 @@ fetured-item__subtitle {
 
 .filter-controls__price-range {
     display: block;
+
 }
 
 .filter-controls__title {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 40px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.search-sort__wrapper{
+    display: flex;
+    align-items: center;
+    padding:  10px 0;
+    margin: 43px 0;
+    background: #f3f3f3;
+}
+
+.search-sort__sort-by-select__wrapper{
+    display: flex;
+    border: 1px solid #ebebeb;
+    margin-left: 10px;
+}
+
+.search-sort__title-select,
+.search-sort__select{
+
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #6f6e6e;
+    font-weight: 400;
+    font-family: "Lato";
+    border: none;
+}
+
+.search-sort__title-select{
+    border-right: 1px solid #ebebeb;
+    background: #fff;
+
 }
 
 .trending-now__option {
@@ -977,10 +1017,13 @@ fetured-item__subtitle {
 .size__filter-option__wrapper {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .size__filter-option {
-    padding: 0 20px 5px 0;
+    display: block;
+    width: 50px;
+    margin-right: 10px;
 }
 
 .size__filter-option-txt {
@@ -1149,9 +1192,13 @@ fetured-item__subtitle {
     align-items: center;
 }
 
+.slider-page{
+    background: #f7f7f7;
+}
+
+
 .slider-page__view-wrapper{
     display: flex;
-
     justify-content: space-between;
 }
 
@@ -1172,6 +1219,8 @@ fetured-item__subtitle {
 
 .slider-page__description-wrapper{
     display: block;
+    position: relative;
+    top: -85px;
     text-align: center;
     font-family: "Lato";
     font-size: 14px;
@@ -1217,10 +1266,15 @@ fetured-item__subtitle {
 }
 
 .single-page__description-by-wrapper{
+    display: flex;
+    justify-content: space-between;
     text-transform: uppercase;
     color: #b9b9b9;
     font-weight: 700;
+    padding: 0 140px;
 }
+
+
 
 .single-page__description-by_spec{
     color: #5e5e5e;
@@ -1236,15 +1290,67 @@ fetured-item__subtitle {
     line-height: 24px;
     color: #ef5b70;
     font-weight: 700;
-    padding-bottom: 45px;
+    padding-right: 20px;
     border-bottom: 1px solid #eaeaea;;
+}
+
+.single-page__description-filters-form{
+    margin-left: 45px;
+    width: 545px;
 }
 
 .single-page__description-filters-wrapper{
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
 }
 
 .single-page__single-description-filter-wrapper{
     display: block;
+    text-align: left;
+}
+
+.single-description-filter__title{
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #2f2f2f;
+    font-weight: 700;
+    font-family: "Lato";
+    margin-bottom: 12px;
+}
+
+.filter-select__color,
+.filter-select__size,
+.single-description-filter__input{
+    display: block;
+    width: 144px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    padding-left: 15px;
+}
+
+
+
+.filter-select__color-option:focus,
+.filter-select__size-option:focus,
+.single-description-filter__input:focus{
+    outline: none;
+}
+
+.slider-page__description-buy-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 27px;
+    color: #ef5b70;
+    background: transparent;
+    border: 2px solid #ef5b70;
+}
+
+.red-cart-iqon{
+    margin-right: 12px;
 }
