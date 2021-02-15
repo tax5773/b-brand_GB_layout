@@ -94,7 +94,7 @@ body {
 .header-form__input {
     border: none;
     width: 280px;
-
+    padding-left: 15px;
     outline: 1px solid #eee;
 }
 
@@ -646,14 +646,13 @@ fetured-item__subtitle {
 }
 
 .info-and-nav__brand-txt-a-lot {
-    width: 37%;
+    width: 36%;
     margin-top: 30px;
 }
 
 .info-and-nav__company-info {
-    width: 20%;
+    width: 13%;
     margin-top: 28px;
-
 }
 
 .brand-txt-a-lot__lot-of-txt {
@@ -1421,6 +1420,10 @@ fetured-item__subtitle {
     text-transform: uppercase;
 }
 
+.shopping-cart__details-form{
+    margin-bottom: 80px;
+}
+
 .img-cross-iqon{
     display: block;
     width: 15px;
@@ -1454,6 +1457,7 @@ fetured-item__subtitle {
 .inputs-and-total__shipping-address-wrapper,
 .inputs-and-total__coupon-wrapper,
 .inputs-and-total__total{
+    display: block;
     width: 30%;
     padding-top: 10px;
 }
@@ -1497,6 +1501,41 @@ fetured-item__subtitle {
     text-transform: uppercase;
 }
 
-.inputs-and-total__total{
+.inputs-and-total__total_bg-color-wrapper{
     background: #f5f3f3;
+    text-align: right;
+    padding: 40px;
+}
+
+.total__subtitle,
+.total__subtitle_spec{
+    font-size: 11px;
+    color: #4a4a4a;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.total__title,
+.total__title_spec{
+    font-size: 16px;
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.total__title_spec{
+    color: #f16d7f;
+}
+
+.total__btn{
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 16px 12px;
+    background: #f16d7f;
+    border: none;
 }
