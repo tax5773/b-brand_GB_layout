@@ -1354,3 +1354,149 @@ fetured-item__subtitle {
 .red-cart-iqon{
     margin-right: 12px;
 }
+
+.shopping-cart__items-grid{
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.items-grid__grid-colum-title,
+.items-grid__grid-title{
+    font-size: 13px;
+    color: #222222;
+    font-weight: 700;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+
+.items-grid__grid-colum-title,
+.items-grid__grid-unit{
+    padding-bottom: 21px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.items-grid__item-wrapper{
+    display: flex;
+    margin-top: 20px;
+}
+
+.items-grid__item-img{
+    display: block;
+    width: 100px;
+}
+
+.items-grid__item-description{
+    padding: 13px 20px;
+}
+
+.items-grid__subtitle-wrapper{
+    margin-top: 38px;
+}
+
+.items-grid__subtitle,
+.items-grid__subtitle_spec{
+    text-transform: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222222;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.items-grid__subtitle_spec{
+    color: #7b7b7b;
+    margin-left: 10px;
+}
+
+.items-grid__grid-unit{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 20px;
+    color: #656565;
+    font-weight: 400;
+    font-family: "Lato";
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.img-cross-iqon{
+    display: block;
+    width: 15px;
+}
+
+.shopping-cart__order-btns-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    font-family: "Lato";
+}
+
+.order-btns__clear-btn,
+.order-btns__continue-btn,
+.shipping-address__btn,
+.coupon__btn{
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 700;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #eaeaea
+}
+
+.shopping-cart__inputs-and-total-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs-and-total__shipping-address-wrapper,
+.inputs-and-total__coupon-wrapper,
+.inputs-and-total__total{
+    width: 30%;
+    padding-top: 10px;
+}
+
+.inputs-and-total__title{
+    font-size: 16px;
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.inputs-and-total__subtitle{
+    display: block;
+    font-size: 13px;
+    color: #000000;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.inputs-and-total__inputs{
+    display: block;
+    height: 40px;
+    font-size: 13px;
+    color: #b1b1b1;
+    font-weight: 300;
+    width: 100%;
+    padding-left: 15px;
+    line-height: 40px;
+    border: 1px solid #eaeaea
+}
+
+.inputs-and-total__inputs:not(:last-child){
+    margin-bottom: 22px;
+}
+
+.shipping-address__btn,
+.coupon__btn{
+    padding: 7px 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.inputs-and-total__total{
+    background: #f5f3f3;
+}
