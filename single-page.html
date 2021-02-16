@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+    <div class="aligh-container header-wrapper">
+        <a href="#" class="header__brand-icon-wrapper">
+            <img src="img/b_logo.png" alt="brand_img" class="brand_img">
+            <span class="header__brand-txt">
+                    Bran<span class="header__brand-txt_spec">d</span>
+                </span>
+        </a>
+        <form class="header__form" action="#">
+            <button class="header-form__browse-btn">Browse</button>
+            <input class="header-form__input" type="text" placeholder="Search for item...">
+            <input type="submit" value="" class="header-form__submit-icon">
+        </form>
+        <div class="header-control">
+            <button class="header-control__bin-btn"><img src="img/black_cart.svg" alt=""></button>
+            <button class="header-control__my-account-btn">My account</button>
+        </div>
+    </div>
+</header>
+    <nav class="header__nav">
+    <a href="#" class="header-nav__link">Home</a>
+    <a href="product.html" class="header-nav__link">Man</a>
+    <a href="#" class="header-nav__link">Women</a>
+    <a href="#" class="header-nav__link">Kids</a>
+    <a href="#" class="header-nav__link">Accoseriese</a>
+    <a href="#" class="header-nav__link">Featured</a>
+    <a href="#" class="header-nav__link">Hot Deals</a>
+</nav>
+    <section class="content-pointer">
+    <div class="content-pointer__wrapper aligh-container">
+        <span class="show-depended-attribute">new arrivals</span>
+        <div class="content-pointer__options">
+            <a href="#" class="content-pointer__options__attribute">Home &nbsp</a>
+            <a href="#" class="content-pointer__options__attribute">Men &nbsp</a>
+            <a href="#" class="content-pointer__options__attribute font_spec">New arrivals &nbsp</a>
+        </div>
+    </div>
+</section>
+    <main>
+    <section class="slider-page">
+        <div class="slider-page__view">
+            <div class="slider-page__view-wrapper aligh-container">
+                <!-- font-awsome сюда нужно чуть позже исправлю, пока такое элегантное решение -->
+                <a href="#" class="slider-page__pagination">&lt;</a>
+                <a href="#" class="slider-page__pagination">&gt;</a>
+            </div>
+        </div>
+        <div class="slider-page__description-wrapper aligh-container">
+            <div class="slider-page__description__aligh-container">
+                <h1 class="slider-page__category-txt">Women collection</h1>
+                <h3 class="slider-page__item-name-txt">Moschino Cheap And Chic</h3>
+                <p class="single-page__description-txt">
+                    Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+                </p>
+                <p class="single-page__description-by-wrapper">
+                    <span class="single-page__description-by">
+                    MATERIAL: <span class="single-page__description-by_spec">COTTON</span>
+                    </span>
+                        <span class="single-page__description-by">
+                    DESIGNER:<span class="single-page__description-by_spec">BINBURHAN</span>
+                    </span>
+                </p>
+                <span class="single-page__description-by__price">$561</span>
+                <form action="#" class="single-page__description-filters-form">
+                    <div class="single-page__description-filters-wrapper">
+                        <div class="single-page__single-description-filter-wrapper">
+                            <span class="single-description-filter__title">Choose color</span>
+                            <select class="filter-select__color">
+                                <option class="filter-select__color-option">Red</option>
+                                <option class="filter-select__color-option">Blue</option>
+                                <option class="filter-select__color-option">Black</option>
+                                <option class="filter-select__color-option">Cyan</option>
+                                <option class="filter-select__color-option">Green</option>
+                            </select>
+                        </div>
+                        <div class="single-page__single-description-filter-wrapper">
+                            <span class="single-description-filter__title">Choose size</span>
+                            <select class="filter-select__size">
+                                <option class="filter-select__size-option">XXS</option>
+                                <option class="filter-select__size-option">XS</option>
+                                <option class="filter-select__size-option">S</option>
+                                <option class="filter-select__size-option">M</option>
+                                <option class="filter-select__size-option">L</option>
+                                <option class="filter-select__size-option">XL</option>
+                                <option class="filter-select__size-option">XXL</option>
+                            </select>
+                        </div>
+                        <div class="single-page__single-description-filter-wrapper">
+                            <span class="single-description-filter__title">Quantity</span>
+                            <input type="text" placeholder="2" class="single-description-filter__input">
+                        </div>
+                    </div>
+                    <button class="slider-page__description-buy-btn"><img src="img/red_cart.svg" alt="" class="red-cart-iqon">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="you-may-like-also">
+       <div class="fetured-item__title-wrapper">
+           <span class="you-may-like-also__title">You may like also</span>
+       </div>
+       <div class="fetured-item__card-array-wrapper aligh-container">
+           <figure class="fetured-item__card-wrapper">
+               <button class="card-hover__add-to-cart-btn"><img class="card-hover__add-to-cart-img" src="img/add_to_cart_img.png" alt="" class="add_to_card_img">Add to Cart</button>
+               <img class="fetured-item__card-img" src="img/blaze_leggings.png" alt="img" class="fetured-item__card-img">
+               <figcaption>
+                            <span class="fetured-item-card__name-of-product">
+                                BLAZE LEGGINGS
+                            </span>
+                   <span class="fetured-item-card__price">
+                                $52.00
+                            </span>
+               </figcaption>
+           </figure>
+           <figure class="fetured-item__card-wrapper">
+               <button class="card-hover__add-to-cart-btn"><img class="card-hover__add-to-cart-img" src="img/add_to_cart_img.png" alt="" class="add_to_card_img">Add to Cart</button>
+               <img class="fetured-item__card-img" src="img/alexa_sweater.png" alt="img" class="fetured-item__card-img">
+               <figcaption>
+                            <span class="fetured-item-card__name-of-product">
+                                ALEXA SWEATER
+                            </span>
+                   <span class="fetured-item-card__price">
+                                $52.00
+                            </span>
+               </figcaption>
+           </figure>
+           <figure class="fetured-item__card-wrapper">
+               <button class="card-hover__add-to-cart-btn"><img class="card-hover__add-to-cart-img" src="img/add_to_cart_img.png" alt="" class="add_to_card_img">Add to Cart</button>
+               <img class="fetured-item__card-img" src="img/agnes_top.png" alt="img" class="fetured-item__card-img">
+               <figcaption>
+                            <span class="fetured-item-card__name-of-product">
+                                AGNES TOP
+                            </span>
+                   <span class="fetured-item-card__price">
+                                $52.00
+                            </span>
+               </figcaption>
+           </figure>
+           <figure class="fetured-item__card-wrapper">
+               <button class="card-hover__add-to-cart-btn"><img class="card-hover__add-to-cart-img" src="img/add_to_cart_img.png" alt="" class="add_to_card_img">Add to Cart</button>
+               <img class="fetured-item__card-img" src="img/sylva_sweater.png" alt="img" class="fetured-item__card-img">
+               <figcaption>
+                            <span class="fetured-item-card__name-of-product">
+                                SYLVA SWEATER
+                            </span>
+                   <span class="fetured-item-card__price">
+                                $52.00
+                            </span>
+               </figcaption>
+           </figure>
+       </div>
+   </section>
+    </main>
+    <footer class="footer">
+        <section class="reviews-and-subscribe">
+            <div class="reviews-and-subscribe__wrapper aligh-container">
+                <article class="reviews__wrapper">
+                <span class="reviews-user__review">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                </span>
+                    <span class="reviews-user__name">
+                    Bin Burhan <span class="reviews-user__from">Dhaka, Bd</span>
+                </span>
+                    <div class="reviews__pagination">
+                        <img src="img/slider_btns-img.png" alt="" class="sider__nav__btns">
+                    </div>
+                </article>
+                <div class="subscribe__wrapper">
+                <span class="subscribe__title">
+                    Subscribe <span class="subscribe__subtitle">For our newletter and promotion</span>
+                </span>
+                    <div class="subscribe__input__wrapper">
+                        <form class="subscribe__form">
+                            <input class="subscribe__form-email__input" type="text" placeholder="Enter Your Email">
+                            <button class="subscribe__btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-and-nav">
+            <figure class="info-and-nav__wrapper aligh-container">
+                <article class="info-and-nav__brand-txt-a-lot ">
+                    <a href="#" class="header__brand-icon-wrapper">
+                        <img src="img/b_logo.png" alt="brand_img" class="brand_img">
+                        <span class="header__brand-txt">
+                    Bran<span class="header__brand-txt_spec">d</span>
+                    </span>
+                    </a>
+                    <p class="brand-txt-a-lot__lot-of-txt">
+                    <span class="lot-of-txt__part">
+                        Objectively transition extensive data rather than cross functional solutions.
+                    Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                    Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    </span>
+
+                        <span class="lot-of-txt__part">
+                        Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    </span>
+                    </p>
+                </article>
+                <article class="info-and-nav__company-info">
+                    <h1 class="company-info__title">Company</h1>
+                    <a href="#" class="company-info__list-point">Home</a>
+                    <a href="#" class="company-info__list-point">Shop</a>
+                    <a href="#" class="company-info__list-point">About</a>
+                    <a href="#" class="company-info__list-point">How it works</a>
+                    <a href="#" class="company-info__list-point">Contact</a>
+                </article>
+                <article class="info-and-nav__company-info">
+                    <h1 class="company-info__title">Information</h1>
+                    <a href="#" class="company-info__list-point">Tearms & Condition</a>
+                    <a href="#" class="company-info__list-point">Privacy Policy</a>
+                    <a href="#" class="company-info__list-point">How to Buy</a>
+                    <a href="#" class="company-info__list-point">How to Sell</a>
+                    <a href="#" class="company-info__list-point">Promotion</a>
+                </article>
+                <article class="info-and-nav__company-info">
+                    <h1 class="company-info__title">Shop Category</h1>
+                    <a href="#" class="company-info__list-point">Men</a>
+                    <a href="#" class="company-info__list-point">Women</a>
+                    <a href="#" class="company-info__list-point">Child</a>
+                    <a href="#" class="company-info__list-point">Apparel</a>
+                    <a href="#" class="company-info__list-point">Brows All</a>
+
+                </article>
+            </figure>
+        </section>
+        <div class="footer-wrapper">
+            <div class="footer-copyright-and-icons aligh-container">
+                <span class="footer__copyright-text">&copy;&nbsp;2017  Brand  All Rights Reserved.</span>
+                <div class="social_icons">
+                    <button class="social-icon"><img src="img/social_icon_facebook.png" alt=""></button>
+                    <button class="social-icon"><img src="img/social_icon_twitter.png" alt=""></button>
+                    <button class="social-icon"><img src="img/social_icon_in.png" alt=""></button>
+                    <button class="social-icon"><img src="img/social_icon_pinterest.png" alt=""></button>
+                    <button class="social-icon"><img src="img/social_icon_google.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
