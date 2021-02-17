@@ -1360,7 +1360,7 @@ fetured-item__subtitle {
     grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.items-grid__grid-colum-title,
+.items-grid__grid-column-title,
 .items-grid__grid-title{
     font-size: 13px;
     color: #222222;
@@ -1369,7 +1369,7 @@ fetured-item__subtitle {
     text-transform: uppercase;
 }
 
-.items-grid__grid-colum-title,
+.items-grid__grid-column-title,
 .items-grid__grid-unit{
     padding-bottom: 21px;
     border-bottom: 1px solid #eaeaea;
