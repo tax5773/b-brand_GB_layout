@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <script src="https://use.fontawesome.com/3761ab013a.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="aligh-container header-wrapper">
+        <a href="#" class="header__brand-icon-wrapper">
+            <img src="img/b_logo.png" alt="brand_img" class="brand_img">
+            <span class="header__brand-txt">
+                    Bran<span class="header__brand-txt_spec">d</span>
+                </span>
+        </a>
+        <form class="header__form" action="#">
+            <button class="header-form__browse-btn">Browse</button>
+            <input class="header-form__input" type="text" placeholder="Search for item...">
+            <input type="submit" value="" class="header-form__submit-icon">
+        </form>
+        <div class="header-control">
+            <button class="header-control__bin-btn"><img class="black-cart-iqon" src="img/black_cart.svg" alt="">
+            </button>
+            <button class="header-control__my-account-btn">My account</button>
+        </div>
+    </div>
+</header>
+<nav class="header__nav">
+    <a href="#" class="header-nav__link">Home</a>
+    <a href="product.html" class="header-nav__link">Man</a>
+    <a href="#" class="header-nav__link">Women</a>
+    <a href="#" class="header-nav__link">Kids</a>
+    <a href="#" class="header-nav__link">Accoseriese</a>
+    <a href="#" class="header-nav__link">Featured</a>
+    <a href="#" class="header-nav__link">Hot Deals</a>
+</nav>
+<section class="content-pointer mb-60px">
+    <div class="content-pointer__wrapper aligh-container">
+        <span class="show-depended-attribute">new arrivals</span>
+        <div class="content-pointer__options">
+            <a href="#" class="content-pointer__options__attribute">Home &nbsp</a>
+            <a href="#" class="content-pointer__options__attribute">Men &nbsp</a>
+            <a href="#" class="content-pointer__options__attribute font_spec">New arrivals &nbsp</a>
+        </div>
+    </div>
+</section>
+<main>
+    <section class="checkout aligh-container">
+        <div class="checkout-form">
+            <div class="checkout-form__item-wrapper">
+                <input type="radio" id="ch-1" name="drop-menu" class="checkout__hide">
+                <label for="ch-1" class="checkout-form__label">01. Shipping Adress</label>
+                <div class="checkout-form__hiddden-content clearfix">
+                    <form class="new-registration-form">
+                        <p class="registration__title">
+                            Check as a guest or register
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <div class="new-registration-form__check-input__wrapper">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                                checkout as guest
+                            </span>
+                        </div>
+                        <div class="new-registration-form__check-input__wrapper mb_30">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                           register
+                       </span>
+                        </div>
+                        <p class="registration__title">
+                            register and save time!
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <p class="registration__subtitle">
+                            &raquo; Fast and easy checkout
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            &raquo; Easy access to your order history and status
+                        </p>
+                        <button class="registration__continue-btn">Continue</button>
+                    </form>
+                    <form class="log-in-form">
+                        <p class="registration__title">
+                            Already registed?
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Please log in below
+                        </p>
+                        <p class="registration__title">
+                            Email address<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__title">
+                            Password<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__subtitle mb_30 spec_clr">
+                            <sup class="log-in-form__sup_spec">*</sup>Required Fileds
+                        </p>
+                        <button class="log-in-form__log-in-btn">
+                            Log in
+                        </button>
+                        <a href="#" class="log-in-form__restore-pwrd-btn">Forgot Password?</a>
+                    </form>
+                </div>
+            </div>
+            <div class="checkout-form__item-wrapper">
+                <input type="radio" id="ch-2" name="drop-menu" class="checkout__hide">
+                <label for="ch-2" class="checkout-form__label">02. Billing Information</label>
+                <div class="checkout-form__hiddden-content clearfix">
+                    <form class="new-registration-form">
+                        <p class="registration__title">
+                            Check as a guest or register
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <div class="new-registration-form__check-input__wrapper">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                                checkout as guest
+                            </span>
+                        </div>
+                        <div class="new-registration-form__check-input__wrapper mb_30">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                           register
+                       </span>
+                        </div>
+                        <p class="registration__title">
+                            register and save time!
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <p class="registration__subtitle">
+                            &raquo; Fast and easy checkout
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            &raquo; Easy access to your order history and status
+                        </p>
+                        <button class="registration__continue-btn">Continue</button>
+                    </form>
+                    <form class="log-in-form">
+                        <p class="registration__title">
+                            Already registed?
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Please log in below
+                        </p>
+                        <p class="registration__title">
+                            Email address<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__title">
+                            Password<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__subtitle mb_30 spec_clr">
+                            <sup class="log-in-form__sup_spec">*</sup>Required Fileds
+                        </p>
+                        <button class="log-in-form__log-in-btn">
+                            Log in
+                        </button>
+                        <a href="#" class="log-in-form__restore-pwrd-btn">Forgot Password?</a>
+                    </form>
+                </div>
+            </div>
+            <div class="checkout-form__item-wrapper">
+                <input type="radio" id="ch-3" name="drop-menu" class="checkout__hide">
+                <label for="ch-3" class="checkout-form__label">03. Shipping information</label>
+                <div class="checkout-form__hiddden-content clearfix">
+                    <form class="new-registration-form">
+                        <p class="registration__title">
+                            Check as a guest or register
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <div class="new-registration-form__check-input__wrapper">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                                checkout as guest
+                            </span>
+                        </div>
+                        <div class="new-registration-form__check-input__wrapper mb_30">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                           register
+                       </span>
+                        </div>
+                        <p class="registration__title">
+                            register and save time!
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <p class="registration__subtitle">
+                            &raquo; Fast and easy checkout
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            &raquo; Easy access to your order history and status
+                        </p>
+                        <button class="registration__continue-btn">Continue</button>
+                    </form>
+                    <form class="log-in-form">
+                        <p class="registration__title">
+                            Already registed?
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Please log in below
+                        </p>
+                        <p class="registration__title">
+                            Email address<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__title">
+                            Password<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__subtitle mb_30 spec_clr">
+                            <sup class="log-in-form__sup_spec">*</sup>Required Fileds
+                        </p>
+                        <button class="log-in-form__log-in-btn">
+                            Log in
+                        </button>
+                        <a href="#" class="log-in-form__restore-pwrd-btn">Forgot Password?</a>
+                    </form>
+                </div>
+            </div>
+            <div class="checkout-form__item-wrapper">
+                <input type="radio" id="ch-4" name="drop-menu" class="checkout__hide">
+                <label for="ch-4" class="checkout-form__label">04. Shipping Method</label>
+                <div class="checkout-form__hiddden-content clearfix">
+                    <form class="new-registration-form">
+                        <p class="registration__title">
+                            Check as a guest or register
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <div class="new-registration-form__check-input__wrapper">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                                checkout as guest
+                            </span>
+                        </div>
+                        <div class="new-registration-form__check-input__wrapper mb_30">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                           register
+                       </span>
+                        </div>
+                        <p class="registration__title">
+                            register and save time!
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <p class="registration__subtitle">
+                            &raquo; Fast and easy checkout
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            &raquo; Easy access to your order history and status
+                        </p>
+                        <button class="registration__continue-btn">Continue</button>
+                    </form>
+                    <form class="log-in-form">
+                        <p class="registration__title">
+                            Already registed?
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Please log in below
+                        </p>
+                        <p class="registration__title">
+                            Email address<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__title">
+                            Password<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__subtitle mb_30 spec_clr">
+                            <sup class="log-in-form__sup_spec">*</sup>Required Fileds
+                        </p>
+                        <button class="log-in-form__log-in-btn">
+                            Log in
+                        </button>
+                        <a href="#" class="log-in-form__restore-pwrd-btn">Forgot Password?</a>
+                    </form>
+                </div>
+            </div>
+            <div class="checkout-form__item-wrapper">
+                <input type="radio" id="ch-5" name="drop-menu" class="checkout__hide">
+                <label for="ch-5" class="checkout-form__label">05. Payment Method</label>
+                <div class="checkout-form__hiddden-content clearfix">
+                    <form class="new-registration-form">
+                        <p class="registration__title">
+                            Check as a guest or register
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <div class="new-registration-form__check-input__wrapper">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                                checkout as guest
+                            </span>
+                        </div>
+                        <div class="new-registration-form__check-input__wrapper mb_30">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                           register
+                       </span>
+                        </div>
+                        <p class="registration__title">
+                            register and save time!
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <p class="registration__subtitle">
+                            &raquo; Fast and easy checkout
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            &raquo; Easy access to your order history and status
+                        </p>
+                        <button class="registration__continue-btn">Continue</button>
+                    </form>
+                    <form class="log-in-form">
+                        <p class="registration__title">
+                            Already registed?
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Please log in below
+                        </p>
+                        <p class="registration__title">
+                            Email address<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__title">
+                            Password<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__subtitle mb_30 spec_clr">
+                            <sup class="log-in-form__sup_spec">*</sup>Required Fileds
+                        </p>
+                        <button class="log-in-form__log-in-btn">
+                            Log in
+                        </button>
+                        <a href="#" class="log-in-form__restore-pwrd-btn">Forgot Password?</a>
+                    </form>
+                </div>
+            </div>
+            <div class="checkout-form__item-wrapper">
+                <input type="radio" id="ch-6" name="drop-menu" class="checkout__hide">
+                <label for="ch-6" class="checkout-form__label">06. Order reviews</label>
+                <div class="checkout-form__hiddden-content clearfix">
+                    <form class="new-registration-form">
+                        <p class="registration__title">
+                            Check as a guest or register
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <div class="new-registration-form__check-input__wrapper">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                                checkout as guest
+                            </span>
+                        </div>
+                        <div class="new-registration-form__check-input__wrapper mb_30">
+                            <input type="radio" name="new-reg-input-name" class="new-registration-form__switch">
+                            <span class="registration__title fs_12">
+                           register
+                       </span>
+                        </div>
+                        <p class="registration__title">
+                            register and save time!
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Register with us for future convenience
+                        </p>
+                        <p class="registration__subtitle">
+                            &raquo; Fast and easy checkout
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            &raquo; Easy access to your order history and status
+                        </p>
+                        <button class="registration__continue-btn">Continue</button>
+                    </form>
+                    <form class="log-in-form">
+                        <p class="registration__title">
+                            Already registed?
+                        </p>
+                        <p class="registration__subtitle mb_30">
+                            Please log in below
+                        </p>
+                        <p class="registration__title">
+                            Email address<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__title">
+                            Password<sup class="log-in-form__sup_spec">*</sup>
+                        </p>
+                        <input type="text" class="log-in-form__form-input">
+                        <p class="registration__subtitle mb_30 spec_clr">
+                            <sup class="log-in-form__sup_spec">*</sup>Required Fileds
+                        </p>
+                        <button class="log-in-form__log-in-btn">
+                            Log in
+                        </button>
+                        <a href="#" class="log-in-form__restore-pwrd-btn">Forgot Password?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <section class="reviews-and-subscribe">
+        <div class="reviews-and-subscribe__wrapper aligh-container">
+            <article class="reviews__wrapper">
+                <span class="reviews-user__review">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                </span>
+                <span class="reviews-user__name">
+                    Bin Burhan <span class="reviews-user__from">Dhaka, Bd</span>
+                </span>
+                <div class="reviews__pagination">
+                    <img src="img/slider_btns-img.png" alt="" class="sider__nav__btns">
+                </div>
+            </article>
+            <div class="subscribe__wrapper">
+                <span class="subscribe__title">
+                    Subscribe <span class="subscribe__subtitle">For our newletter and promotion</span>
+                </span>
+                <div class="subscribe__input__wrapper">
+                    <form class="subscribe__form">
+                        <input class="subscribe__form-email__input" type="text" placeholder="Enter Your Email">
+                        <button class="subscribe__btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info-and-nav">
+        <figure class="info-and-nav__wrapper aligh-container">
+            <article class="info-and-nav__brand-txt-a-lot ">
+                <a href="#" class="header__brand-icon-wrapper">
+                    <img src="img/b_logo.png" alt="brand_img" class="brand_img">
+                    <span class="header__brand-txt">
+                    Bran<span class="header__brand-txt_spec">d</span>
+                    </span>
+                </a>
+                <p class="brand-txt-a-lot__lot-of-txt">
+                    <span class="lot-of-txt__part">
+                        Objectively transition extensive data rather than cross functional solutions.
+                    Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                    Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    </span>
+
+                    <span class="lot-of-txt__part">
+                        Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    </span>
+                </p>
+            </article>
+            <article class="info-and-nav__company-info">
+                <h1 class="company-info__title">Company</h1>
+                <a href="#" class="company-info__list-point">Home</a>
+                <a href="#" class="company-info__list-point">Shop</a>
+                <a href="#" class="company-info__list-point">About</a>
+                <a href="#" class="company-info__list-point">How it works</a>
+                <a href="#" class="company-info__list-point">Contact</a>
+            </article>
+            <article class="info-and-nav__company-info">
+                <h1 class="company-info__title">Information</h1>
+                <a href="#" class="company-info__list-point">Tearms & Condition</a>
+                <a href="#" class="company-info__list-point">Privacy Policy</a>
+                <a href="#" class="company-info__list-point">How to Buy</a>
+                <a href="#" class="company-info__list-point">How to Sell</a>
+                <a href="#" class="company-info__list-point">Promotion</a>
+            </article>
+            <article class="info-and-nav__company-info">
+                <h1 class="company-info__title">Shop Category</h1>
+                <a href="#" class="company-info__list-point">Men</a>
+                <a href="#" class="company-info__list-point">Women</a>
+                <a href="#" class="company-info__list-point">Child</a>
+                <a href="#" class="company-info__list-point">Apparel</a>
+                <a href="#" class="company-info__list-point">Brows All</a>
+
+            </article>
+        </figure>
+    </section>
+    <div class="footer-wrapper">
+        <div class="footer-copyright-and-icons aligh-container">
+            <span class="footer__copyright-text">&copy;&nbsp;2017  Brand  All Rights Reserved.</span>
+            <div class="social_icons">
+                <button class="social-icon"><img src="img/social_icon_facebook.png" alt=""></button>
+                <button class="social-icon"><img src="img/social_icon_twitter.png" alt=""></button>
+                <button class="social-icon"><img src="img/social_icon_in.png" alt=""></button>
+                <button class="social-icon"><img src="img/social_icon_pinterest.png" alt=""></button>
+                <button class="social-icon"><img src="img/social_icon_google.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
